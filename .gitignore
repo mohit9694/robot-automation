@@ -13,8 +13,7 @@ __pycache__/
 # VS Code
 .vscode/
 
-# Test Data
-Testdata/
+playwright-log.txt
 
 # Docker
 *.log
