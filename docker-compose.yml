@@ -6,8 +6,11 @@ services:
 
     container_name: robot-automation
 
+    user: "1000:1000"
+
     volumes:
       - .:/automation
 
     stdin_open: true
     tty: true
+  
