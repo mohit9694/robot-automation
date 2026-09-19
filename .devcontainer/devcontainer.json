@@ -1,0 +1,20 @@
+{
+    "name": "Robot Framework Automation",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "robot-automation",
+    "workspaceFolder": "/automation",
+    "shutdownAction": "stopCompose",
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "robocorp.robotframework-lsp",
+                "d-biehl.robotcode",
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    },
+
+    "remoteUser": "root"
+}

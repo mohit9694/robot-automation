@@ -1,0 +1,12 @@
+fields:
+  ui:
+    browser: "chromium"
+    url: 'https://www.saucedemo.com/'
+    username: 'standard_user'
+    password: 'secret_sauce'
+
+  api:
+    browser: "firefox"
+    url: 'https://restful-booker.herokuapp.com/'
+    username: 'admin'
+    password: 'password123'

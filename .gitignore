@@ -1,0 +1,24 @@
+# Robot Framework results
+*.html
+*.xml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+
+# VS Code
+.vscode/
+
+# Test Data
+Testdata/
+
+# Docker
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
