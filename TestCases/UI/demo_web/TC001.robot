@@ -4,9 +4,10 @@ Documentation    This is the basic ui testcase file
 Library          Browser
 Resource         ${EXECDIR}/Resources/Locators/login.resource
 Resource         ${EXECDIR}/Resources/Locators/home_page.resource
+Resource         ${EXECDIR}/Resources/Keywords/loginpage.resource
 Variables        ${EXECDIR}/${CRED}
-Test Setup      Open Website
-Test Teardown   Close Browser
+Test Setup       Open Website    ${browser}    ${url}
+Test Teardown    Close Browser
 
 
 *** Variables ***
@@ -40,9 +41,3 @@ Login User With Invalid Username And Password
     Get Element States    ${login_error_msg_cross_btn}    contains    visible    enabled
     Click    ${login_error_msg_cross_btn}
 
-
-*** Keywords ***
-Open Website
-    [Documentation]    This keyword open the website
-    New Browser    browser=${browser}    headless=true
-    New Page    ${url}
