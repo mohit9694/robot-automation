@@ -7,3 +7,4 @@ robotframework-jsonlibrary==0.5
 requests
 python-dotenv
 PyYAML
+openai
